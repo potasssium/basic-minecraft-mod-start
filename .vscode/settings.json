@@ -1,0 +1,14 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "workbench.tips.enabled": false,
+    "workbench.editor.alwaysShowEditorActions": false,
+    "workbench.editor.autoLockGroups": {
+        "java.formatterSettingsEditor": true
+    },
+    "gitlens.views.launchpad.files.compact": false,
+    "gitlens.views.launchpad.files.layout": "tree",
+    "explorer.compactFolders": false,
+    "explorer.excludeGitIgnore": false,
+    "explorer.fileNesting.enabled": false,
+    "java.configuration.updateBuildConfiguration": "automatic"
+}
