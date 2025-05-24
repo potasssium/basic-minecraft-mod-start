@@ -28,7 +28,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
-import net.kay.modfuckery.Items.Items;
+import net.kay.modfuckery.Items.ModCreativeModeTabs;
+import net.kay.modfuckery.Items.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ModFuckery.MOD_ID)
@@ -44,7 +45,9 @@ public class ModFuckery
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        Items.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -67,7 +70,7 @@ public class ModFuckery
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Items.MEOW);
+            event.accept(ModItems.MEOW);
         }
     }
 
