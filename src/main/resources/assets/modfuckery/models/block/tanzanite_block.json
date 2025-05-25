@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "modfuckery:block/tanzanite_block"
+    }
+}

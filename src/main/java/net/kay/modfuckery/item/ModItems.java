@@ -1,4 +1,4 @@
-package net.kay.modfuckery.Items;
+package net.kay.modfuckery.item;
 
 import java.rmi.registry.Registry;
 
