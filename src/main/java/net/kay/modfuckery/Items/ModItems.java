@@ -14,7 +14,15 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ModFuckery.MOD_ID);
 
-    public static final RegistryObject<Item> MEOW = ITEMS.register("meow",
+    public static final RegistryObject<Item> MYHEART = ITEMS.register("myheart",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TANZANITE = ITEMS.register("tanzanite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_TANZANITE = ITEMS.register("raw_tanzanite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TURQUOIS = ITEMS.register("turquois",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_TURQUOIS = ITEMS.register("raw_turquois",
             () -> new Item(new Item.Properties()));
     
 

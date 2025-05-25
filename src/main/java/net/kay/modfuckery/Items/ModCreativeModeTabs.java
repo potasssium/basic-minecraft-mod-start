@@ -14,10 +14,14 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ModFuckery.MOD_ID);
 
         public static final RegistryObject<CreativeModeTab> MOD_TAB = CREATIVE_MODE_TABS.register("mod_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MEOW.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MYHEART.get()))
                     .title(Component.translatable("creativetab.mod_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.MEOW.get());  //Items need to be added here, they will be added depending on order, only use get for custom items
+                        pOutput.accept(ModItems.MYHEART.get());  //Items need to be added here, they will be added depending on order, only use get for custom items
+                        pOutput.accept(ModItems.TANZANITE.get());
+                        pOutput.accept(ModItems.RAW_TANZANITE.get());
+                        pOutput.accept(ModItems.TURQUOIS.get());
+                        pOutput.accept(ModItems.RAW_TURQUOIS.get());
                     })
             .build());
 
