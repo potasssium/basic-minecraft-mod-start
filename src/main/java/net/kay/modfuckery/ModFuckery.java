@@ -31,6 +31,8 @@ import org.slf4j.Logger;
 import net.kay.modfuckery.block.ModBlocks;
 import net.kay.modfuckery.item.ModCreativeModeTabs;
 import net.kay.modfuckery.item.ModItems;
+import net.kay.modfuckery.loot.ModLootModifiers;
+import net.kay.modfuckery.villager.ModVillagers;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ModFuckery.MOD_ID)
@@ -50,6 +52,14 @@ public class ModFuckery
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+         ModLootModifiers.register(modEventBus);
+        ModVillagers.register(modEventBus);
+
+        modEventBus.addListener(this::commonSetup);
+
+        MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::addCreative);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

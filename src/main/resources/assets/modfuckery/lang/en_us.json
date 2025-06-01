@@ -7,5 +7,55 @@
 
     "block.modfuckery.tanzanite_block": "tanzanite block test",
 
-    "creativetab.mod_tab": "Pixel Hearts"
+    "creativetab.mod_tab": "Pixel Hearts",
+
+     "item.modfuckery.sapphire": "Sapphire",
+  "item.modfuckery.raw_sapphire": "Raw Sapphire",
+
+  "item.modfuckery.metal_detector": "Metal Detector",
+  "item.modfuckery.strawberry": "Strawberry",
+  "item.modfuckery.pine_cone": "Pine Cone",
+  "item.modfuckery.sapphire_staff": "Sapphire Staff",
+
+  "item.modfuckery.sapphire_sword": "Sapphire Sword",
+  "item.modfuckery.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.modfuckery.sapphire_axe": "Sapphire Axe",
+  "item.modfuckery.sapphire_shovel": "Sapphire Shovel",
+  "item.modfuckery.sapphire_hoe": "Sapphire Hoe",
+
+  "item.modfuckery.sapphire_helmet": "Sapphire Helmet",
+  "item.modfuckery.sapphire_chestplate": "Sapphire Chestplate",
+  "item.modfuckery.sapphire_leggings": "Sapphire Leggings",
+  "item.modfuckery.sapphire_boots": "Sapphire Boots",
+
+  "item.modfuckery.strawberry_seeds": "Strawberry Seeds",
+
+  "item.modfuckery.corn": "Corn",
+  "item.modfuckery.corn_seeds": "Corn Seeds",
+
+  "block.modfuckery.sapphire_block": "Block of Sapphire",
+  "block.modfuckery.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "block.modfuckery.sapphire_ore": "Sapphire Ore",
+  "block.modfuckery.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.modfuckery.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+  "block.modfuckery.nether_sapphire_ore": "Nether Sapphire Ore",
+
+  "block.modfuckery.sound_block": "Sound Block",
+
+  "block.modfuckery.sapphire_stairs": "Sapphire Stairs",
+  "block.modfuckery.sapphire_slab": "Sapphire Slab",
+  "block.modfuckery.sapphire_button": "Sapphire Button",
+  "block.modfuckery.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.modfuckery.sapphire_fence": "Sapphire Fence",
+  "block.modfuckery.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.modfuckery.sapphire_wall": "Sapphire Wall",
+  "block.modfuckery.sapphire_door": "Sapphire Door",
+  "block.modfuckery.sapphire_trapdoor": "Sapphire Trapdoor",
+  
+  "block.modfuckery.catmint": "Catmint",
+
+  "tooltip.modfuckery.metal_detector.tooltip": "Finds valuables underground!",
+
+  "entity.minecraft.villager.modfuckery.soundmaster": "Sound Master"
 }
