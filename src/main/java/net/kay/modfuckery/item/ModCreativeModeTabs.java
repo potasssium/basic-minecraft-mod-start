@@ -73,6 +73,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
 
                         pOutput.accept(ModBlocks.CATMINT.get());
+                        pOutput.accept(ModBlocks.PINK_PETALS.get());
                     })
             .build());
 

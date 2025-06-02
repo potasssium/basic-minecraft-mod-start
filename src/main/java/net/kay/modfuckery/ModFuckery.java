@@ -2,6 +2,8 @@ package net.kay.modfuckery;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -29,6 +31,8 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 import net.kay.modfuckery.block.ModBlocks;
+import net.kay.modfuckery.entity.ModEntities;
+import net.kay.modfuckery.entity.client.BladeeRenderer;
 import net.kay.modfuckery.item.ModCreativeModeTabs;
 import net.kay.modfuckery.item.ModItems;
 import net.kay.modfuckery.loot.ModLootModifiers;
@@ -55,6 +59,7 @@ public class ModFuckery
 
          ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -100,9 +105,7 @@ public class ModFuckery
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            EntityRenderers.register(ModEntities.BLADEE.get(), BladeeRenderer::new);
         }
     }
 }
