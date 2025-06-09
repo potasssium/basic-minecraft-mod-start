@@ -39,6 +39,13 @@ public class BladeeEntity extends Animal{
 
         if(this.level().isClientSide()) {
             setupAnimationStates();
+        } else {
+            LivingEntity target = this.level().getNearestPlayer(this, this.getAttributeBaseValue(Attributes.FOLLOW_RANGE));
+            if (target != null && target.isAlive() && !target.isSpectator()) {
+                if (!this.alertAnimationState.isStarted()) {
+                    this.alertAnimationState.start(this.tickCount);
+                }
+            }
         }
     }
 
@@ -54,9 +61,10 @@ public class BladeeEntity extends Animal{
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
         .add(Attributes.MAX_HEALTH, 200)
-         .add(Attributes.FOLLOW_RANGE, 24D)
+        .add(Attributes.FOLLOW_RANGE, 24D)
         .add(Attributes.MOVEMENT_SPEED, 0.25D);
     }
+
 
     @Override
     @Nullable

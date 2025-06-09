@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class BladeeRenderer extends MobRenderer<BladeeEntity, BladeeModel<BladeeEntity>> {
     public BladeeRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new BladeeModel<>(pContext.bakeLayer(ModModelLayers.BLADEE_LAYER)), 2f);
+        super(pContext, new BladeeModel<>(pContext.bakeLayer(ModModelLayers.BLADEE_LAYER)), 0.5f);
     }
 
     @Override

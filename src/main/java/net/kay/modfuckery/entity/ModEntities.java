@@ -17,7 +17,7 @@ public class ModEntities {
 
              public static final RegistryObject<EntityType<BladeeEntity>> BLADEE =
             ENTITY_TYPES.register("bladee", () -> EntityType.Builder.of(BladeeEntity::new, MobCategory.CREATURE)
-                    .sized(2.5f, 2.5f).build("bladee"));
+                    .sized(1.5f, 1.5f).build("bladee"));
 
 
     public static void register(IEventBus eventBus) {
